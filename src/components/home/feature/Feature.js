@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Feature.css";
 import { IoSearchOutline } from "react-icons/io5";
 import img1 from "../../images/image-1.png";
@@ -91,9 +92,9 @@ function Feature() {
                 Learn about the benefits of organic farming and how it can help
                 reduce the environmental impact of agriculture.
               </p>
-              <a className="link-card" href="organic-farming">
+              <Link className="link-card" to="organic-farming">
                 Read Full Article
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -108,9 +109,9 @@ function Feature() {
                 Discover how IoT devices are transforming precision agriculture,
                 from soil moisture sensors to drones.
               </p>
-              <a className="link-card" href="organic-farming-idea2">
+              <Link className="link-card" to="organic-farming-idea2">
                 Read Full Article
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -124,9 +125,9 @@ function Feature() {
                 Find out how automation can increase productivity on the farm,
                 and learn about the latest tools and technologies.
               </p>
-              <a className="link-card" href="/full-Article">
+              <Link className="link-card" to="/full-Article">
                 Read Full Article
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -141,9 +142,9 @@ function Feature() {
                 Explore the economic benefits of sustainable farming practices,
                 from reduced input costs.
               </p>
-              <a className="link-card" href="/full-Article">
+              <Link className="link-card" to="/full-Article">
                 Read Full Article
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -157,9 +158,9 @@ function Feature() {
                 Hear from top experts in the field about the latest trends and
                 technologies shaping the future of Agri-tech.
               </p>
-              <a className="link-card" href="/full-Article">
+              <Link className="link-card" to="/full-Article">
                 Read Full Article
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -173,9 +174,9 @@ function Feature() {
                 Discover how precision planting can help farmers maximize their
                 crop yields while reducing waste and costs.
               </p>
-              <a className="link-card" href="/full-Article">
+              <Link className="link-card" to="/full-Article">
                 Read Full Article
-              </a>
+              </Link>
             </div>
           </div>
           <div className="pagination">
