@@ -1,5 +1,4 @@
 import React from "react";
-import { IoSearchOutline } from "react-icons/io5";
 import { IoLogoTwitter } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
