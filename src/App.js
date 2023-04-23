@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./components/error/Error";
+import OrganicFarming from "./OrganicFarming";
+import BlogList from "./components/blog/BlogList";
+import BlogList2 from "./components/blog/BlogList2";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <OrganicFarming />,
+      errorElement: <ErrorPage />
+    },
+    {
+      path: "organic-farming",
+      element: <BlogList />
+    },
+    {
+      path: "organic-farming-idea2",
+      element: <BlogList2 />
+    }
+  ]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={router} />
     </div>
   );
 }

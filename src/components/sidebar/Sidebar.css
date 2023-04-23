@@ -1,0 +1,41 @@
+.sidebar {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 10px 10px 100px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-out;
+}
+.nav-items {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-item {
+  list-style: none;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.4s ease-out;
+}
+.nav-link:active,
+.nav-link:visited {
+  color: #00c170;
+}
+.nav-link:hover {
+  background-color: #00c170;
+  color: #ffffff;
+}

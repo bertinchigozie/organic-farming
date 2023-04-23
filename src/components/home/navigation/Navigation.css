@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap");
+
+.header {
+  background-image: url("../../images/navbar-image.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.nav-container {
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+}
+.logo {
+  width: 90px;
+}
+
+.nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLinks-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-icon {
+  color: #ffffff;
+  font-size: 40px;
+  display: none;
+}
+.btn {
+  text-align: center;
+}
+.nav-btn {
+  border: none;
+  padding: 8px 24px;
+  border-radius: 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00c170;
+}
+@media (max-width: 481px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+  }
+  .header {
+    background-image: none;
+  }
+  .nav {
+    background-color: #00c170;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  .btn {
+    display: none;
+  }
+}
