@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Feature.css";
 import { IoSearchOutline } from "react-icons/io5";
@@ -10,13 +10,34 @@ import img5 from "../../images/image-5.png";
 import img6 from "../../images/image-6.png";
 
 function Feature() {
+  const [searchItem, setSearchItem] = useState("");
+
+  const searchHandler = (e) => {
+    setSearchItem(e.target.value);
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (!searchItem) {
+      alert("Please write a valid search");
+    } else {
+      alert(`Searching for ${searchItem}...`);
+    }
+    setSearchItem("");
+  };
+
   return (
     <div className="feature-box">
       <div className="feature">
         <div className="feature-1">
           <div className="search-box">
-            <input type="text" placeholder="Search" className="search-bar" />
-            <IoSearchOutline className="search-icon" />
+            <input
+              type="text"
+              placeholder="Search"
+              className="search-bar"
+              value={searchItem}
+              onChange={searchHandler}
+            />
+            <IoSearchOutline className="search-icon" onClick={submitHandler} />
           </div>
           <div className="box-shadow">
             <p className="feature-heading">Categories</p>

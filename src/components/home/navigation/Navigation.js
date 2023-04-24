@@ -10,8 +10,8 @@ function Navigation() {
     setSidebar(!sidebar);
   };
   return (
-    <div className="header">
-      <Sidebar show={sidebar} closeSide={showSidebar} />;
+    <div>
+      <Sidebar show={sidebar} closeSide={showSidebar} />
       <nav className="nav-container">
         <div className="nav">
           <div>

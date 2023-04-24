@@ -1,9 +1,11 @@
 import React from "react";
 import "./Hero.css";
+import Navigation from "../navigation/Navigation";
 function Hero() {
   return (
     <div>
       <header className="header">
+        <Navigation />
         <div className="heading-box">
           <div className="primary-heading">
             <p>Transforming Agriculture with Technology</p>
